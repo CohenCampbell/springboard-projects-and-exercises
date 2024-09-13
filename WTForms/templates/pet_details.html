@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Details</title>
+</head>
+<body>
+    <img src="{{pet.photo_url}}">
+    <hr>
+    <p>This is {{pet.name}}, and he is a {{pet.species}}. {{pet.name}} is {{pet.age}}. Notable things about {{pet.name}} are {{pet.notes}}</p>
+    {%if pet.available==False %}
+    <p id="available-p">{{pet.name}} is available for adoption!</p>
+    {%else%}
+    <p id="not-available-p">{{pet.name}} is not available for adoption.</p>
+    {%endif%}
+    <a href="/"><button>Back</button></a>
+</body>
+</html>

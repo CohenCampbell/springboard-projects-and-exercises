@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Pet</title>
+</head>
+<body>
+    <form action="/pet/{{pet.id}}/edit" method="post">
+        {{form.csrf_token}}
+       {%for field in form if field.widget.input_type!='hidden'%} 
+       <p>{{field.label}} {{field}}</p>
+       {%endfor%}
+       <button type="submit">Edit</button>
+    </form>
+    <a href="/"><button>Back</button></a>
+    
+
+</body>
+</html>

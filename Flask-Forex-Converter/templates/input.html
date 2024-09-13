@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forex Converter</title>
+    <link rel="stylesheet" href="/static/forex_converter.css"></link>
+</head>
+<body>
+    <form action="/" method="post">
+        <div>
+            <p>Converting from: </p>
+            <input required name="cFrom" type="text" placeholder="Use ISO currency codes">
+        </div>
+        <div>
+            <p>Converting to: </p>
+            <input required name="cTo" type="text" placeholder="Use ISO currency codes">
+        </div>
+        <div>
+            <p>Amount: </p>
+            <input required name="amount" type="number" min="1" max="100001" placeholder="Do not include any symbols">
+        </div>
+        <button type="submit">Convert</button>
+        <div id="flash"> 
+            {%for msg in get_flashed_messages(with_categories=true)%}
+            <p class="flash_p">!!! {{msg[1]}} !!!</p>
+            {%endfor%}
+        </div>
+        
+        
+    </form>
+</body>
+</html>

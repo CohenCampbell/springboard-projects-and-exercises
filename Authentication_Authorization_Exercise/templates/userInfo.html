@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{user.username}}</title>
+</head>
+<body>
+    <div>
+        <h1>{{user.username}}</h1>
+        <h3>Name: {{user.first_name}} {{user.last_name}}</h3>
+        <a href="/logout"><button>Logout</button></a>
+        <form method="post" action="/delete/{{user.username}}">
+          <button type="submit" style="color: red;">Delete Account</button>  
+        </form>
+        
+    </div>
+    <hr>
+    <div>
+        <h1>Feedback</h1>
+        <a href="/users/{{user.username}}/feedback/add"><button>Add</button></a>
+        <ul>
+            {%for feed in feedback%}
+            <li>
+                <h3>{{feed.title}}</h3>
+                <p>{{feed.content}}</p>
+                <form method="post" action="/feedback/{{feed.id}}/delete">
+                    <button type="submit">Delete</button>
+                </form>
+                <form action="/feedback/{{feed.id}}/update">
+                    <button type="submit">Edit</button>
+                </form>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+</body>
+</html>

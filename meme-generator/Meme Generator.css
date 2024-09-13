@@ -1,0 +1,96 @@
+body{
+    background-color: darkslategrey;
+}
+
+
+#memeDiv{
+    position: relative;
+    display: block;
+    width: 100rem;
+    height: 100rem;
+    }
+
+.newDClass{
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+
+#PT{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0%;
+    margin: 0%;
+    z-index: 2;
+    font-family: Impact;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+}
+
+.newDClass img{
+    display: inline-block;
+    position: relative;
+    top: 4%;
+    height: 100%;
+    width: 100%;
+    margin:0%;
+    z-index: 1;
+}
+
+#PB{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 4%;
+    margin:0%;
+    z-index: 2;
+    font-family: Impact;
+    text-align: center;
+    font-family: Impact;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+}
+
+h5{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 10px;
+    color: gold;
+}
+
+
+input{
+   transform: translateY(-15%);
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+form{
+    background-color: lightslategray;
+    text-align: center;
+}

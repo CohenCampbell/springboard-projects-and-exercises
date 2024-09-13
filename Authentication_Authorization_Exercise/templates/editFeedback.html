@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Feedback</title>
+</head>
+<body>
+    <form method="post" action="/feedback/{{feedback.id}}/update">
+        <div>
+        <label for="textInput1">Title: </label>
+        <input type="text"value="{{feedback.title}}" name="title" id="textInput1">
+        </div>
+        <br>
+        <div>
+        <label for="textArea1">Content: </label>
+        <textarea id="textArea1" name="content">{{feedback.content}}</textarea>
+        </div>
+        <button style="margin-top: 10px;" type="submit">Edit Feedback</button>
+    </form>
+</body>
+</html>

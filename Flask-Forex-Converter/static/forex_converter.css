@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+
+p{
+display: inline;
+margin-right: 3px;
+}
+
+button{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    background-color: #4c8bf5;
+    color: white;
+    height: 35px;
+    width: 85px;
+    font-size: large;
+    border-radius: 8%;
+}
+
+input{
+    margin-top: 10px;
+    outline: none;
+    border: 5px, grey;
+    height: 35px;
+    width: 180px;
+    text-align: center;
+    border-radius: 0%;
+}
+
+form{
+    border-style:solid;
+    border-color: #4c8bf5;
+    background-color: white;
+    display: inline-block;
+    width: 45%;
+    height: 213px;
+}
+
+#output{
+    background-color: white;
+    display: inline-block;
+}
+
+#flash{
+    color: red;
+    border-color: #4c8bf5;;
+    border-style: solid;
+    margin-top: 10px;
+    font-size: large;
+}

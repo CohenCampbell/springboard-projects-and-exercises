@@ -1,0 +1,33 @@
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content{
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+button{
+    margin-left: 25px;
+    margin-top: 15px;
+    background-color: rgba(250, 247, 247, 0.5);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    height: 30px;
+}
+
+button:hover{
+    background-color: rgba(136, 132, 132, 0.5);
+}

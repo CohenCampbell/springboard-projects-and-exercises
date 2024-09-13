@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Feedback</title>
+</head>
+<body>
+    <form method="post" action="/users/{{user.username}}/feedback/add">
+        <div>
+        <label for="textInput1">Title: </label>
+        <input type="text" name="title" id="textInput1">
+        </div>
+        <br>
+        <div>
+        <label for="textArea1">Content: </label>
+        <textarea id="textArea1" name="content"></textarea>
+        </div>
+        <button style="margin-top: 10px;" type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>

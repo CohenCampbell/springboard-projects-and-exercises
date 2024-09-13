@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/board.css">
+    <title>Board</title>
+</head>
+<body>
+    <h3 id="time"></h3>
+    <table>
+        {%for row in board%}
+        <tr> 
+            {%for colum in row%}
+            <td>{{colum}}</td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+    <form>
+        <input type="text" name="guess">
+        <button type="submit">Submit</button>
+    </form>
+    <p class="score-msg"></p>
+    <p id="highScore-msg"> </p>
+    <p class="info-msg"></p>
+    <p id="games-played"> </p>
+    
+    <script src="/static/board.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+ul{
+    list-style-type: none
+}
+.available-p{
+    text-decoration: underline;
+}
+div{
+    border: solid;  
+    display: inline-block;
+    text-align: center;
+}
+#available-p{
+    color: green;
+}
+#not-available-p{
+    color:red;
+}

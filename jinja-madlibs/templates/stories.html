@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Madlibs Stories</title>
+</head>
+<body>
+    <h1>Madlibs</h1>
+    <form action="/complete">
+    {% for word in words%}
+        <div>
+            {{word}}: <input type="text" name="word_input">
+        </div> 
+    {% endfor %}
+        <button type="submit" value="submit"></button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/homepage.css">
+    <title>Cupcakes Homepage</title>
+</head>
+<body>
+    <ul id="cupcakeList">
+        {%for cupcake in cupcakes%}
+        <li>
+            <img src="{{cupcake.image}}">{{cupcake.flavor}}<button class="deleteCupcake" id="{{cupcake.id}}">X</button>
+        </li>
+        {%endfor%}
+    </ul>
+    <button id="showNewForm">Add New</button>
+    <hr>
+    <form class="hidden" id="newForm">
+        <h1>Add new cupcake</h1>
+        <label for="flavor-input">Flavor</label><input class="Create-Cupcake-Form-Input" id="flavor-input" name="flavor" type="text">
+        <label for="size-input">Size</label><input class="Create-Cupcake-Form-Input" id="size-input" name="size" type="text">
+        <label for="rating-input">Rating</label><input class="Create-Cupcake-Form-Input" id="rating-input" name="rating" type="text">
+        <label for="image-input">Image URL</label><input class="Create-Cupcake-Form-Input" id="image-input" name="image" type="text">
+        <button id="createCupcakeButton" type="submit">Create New Cupcake</button>
+        <button id="createCupcakeBackButton" type="button">Back</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/homepage.js"></script>
+</body>
+</html>

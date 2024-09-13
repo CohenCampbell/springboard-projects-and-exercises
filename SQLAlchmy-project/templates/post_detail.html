@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Post Details</title>
+</head>
+<body>
+    <h1>{{post.title}}</h1>
+    <p>{{post.content}}</p>
+    <ul id="ul123">
+        {%for tag in tags%}
+         <a href="/tag/detail/{{tag.id}}"><li>{{tag.name}}</li></a>
+        {%endfor%}
+    </ul>
+    
+    <footer>by: {{user.first_name}}</footer>
+    <a href="/detail/{{user.id}}"><button>Back</button></a>
+    <a href="/post/edit/{{post.id}}"><button>Edit</button></a>
+    <a href="/delete/post/{{post.id}}"><button>Delete</button></a>
+</body>
+</html>

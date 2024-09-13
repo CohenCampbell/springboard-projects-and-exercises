@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hotpink;
+}
+
+#game div {
+  border: 1px solid yellow;
+  background-color: teal;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+
+#start{
+  margin: 0px;
+  margin-top: 0px;
+  position: absolute;
+  background-color: teal;
+  height:100vh;
+  width:100vw;
+  text-align: center;
+  transition: transform 1s;
+  z-index: 2;
+}
+
+
+
+.offScreen{
+
+  transform: translateY(-110%);
+}
+
+#start h1{
+  display: block;
+  color: hotpink;
+  text-shadow: 2px 2px 8px olive;
+  font-size: 100px;
+  margin: 15px;
+  }
+  
+#scoreDiv{
+   display: inline-block;
+    width: 200px;
+    border: 3px solid olive;
+    border-radius: 15px;
+    text-align: center;
+}
+
+  #start h2{
+    color: hotpink;
+    text-shadow: 2px 2px 8px olive;
+    display: inline-block;
+  }
+
+  #score {
+    display: inline;
+    text-decoration: underline;
+  }
+
+  #startBtn{
+    margin: 15px; 
+  }
+
+  #startBtn input{
+   width: 175px;
+   height: 50px;
+   background-color: gold;
+   border-color: olive;
+   outline: none;
+   font-size: 25px;
+   border-radius: 15px;
+  }
+
+  #gameHeader{
+    background-color: yellow;
+    display: block;
+    text-align: center;
+  }
+  
+  #gameHeader h2{
+    display: inline;
+    font-size: 40px;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  #gameHeader h3{
+    
+    display: inline;
+  }
+  #gameScoreBox{
+    
+    display: inline;
+  }
+  #restart{
+   display: none;
+   background-color: hotpink;
+   height: 30px;
+   transform: translateY(-10px);
+  }
+

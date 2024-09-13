@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/homepage.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <ul>
+    {%for pet in pets%}
+        <div>
+    <li>
+        
+        <img width="50" height="50" src="{{pet.photo_url}}"> <a href="/pet/{{pet.id}}/details">{{pet.name}}</a>
+        {%if pet.available==False %}
+        <p id="available-p">available</p>
+        {%else%}
+        <p id="not-available-p">not available</p>
+        {%endif%}
+        <a href="/delete/formdata/{{pet.id}}"><button type="button" id="petDelBtn">delete</button></a>
+        <a href="/pet/{{pet.id}}/edit"><button type="button">Edit</button></a>
+    </li>
+        </div>
+    {%endfor%}
+    </div>
+    </ul>
+    <a href="/add"><button>Add Pet</button></a>
+</body>
+</html>
